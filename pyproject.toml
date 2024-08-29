@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "late-chunking-experiments"
+version = "0.1.0"
+description = ""
+authors = ["Charles Pierse <charlespierse@gmail.com>"]
+readme = "README.md"
+packages = [{include = "late_chunking_experiments"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+colbert-ai = {extras = ["faiss-cpu", "torch"], version = "^0.2.21"}
+sentence-transformers = "^3.0.1"
+numpy = "==1.*"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
